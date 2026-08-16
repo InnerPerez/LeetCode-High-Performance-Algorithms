@@ -68,7 +68,7 @@ int main()
                     if (new_entry.second + precio < rutas[new_entry.first])
                     {
                         rutas[new_entry.first] = new_entry.second + precio;
-                        //cout << "Ciudad > " << new_entry.first << " - precio: " << new_entry.second << " - Pasos: " << pasos + 1<<endl;
+                        //cout << "City > " << new_entry.first << " - Price: " << new_entry.second << " - Steps: " << pasos + 1<<endl;
                         fila.push_back({ new_entry.first, new_entry.second + precio, pasos + 1 });
                     }
 
